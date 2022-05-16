@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv src/main/resources/public",
+    "start": "sirv src/main/resources/public -p 8081",
     "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
     "smui-theme-light": "smui-theme compile src/main/resources/static/style/smui.css -i src/main/webapp/svelte/theme",
     "smui-theme-dark": "smui-theme compile src/main/resources/static/style/smui-dark.css -i src/main/webapp/svelte/theme/dark",
